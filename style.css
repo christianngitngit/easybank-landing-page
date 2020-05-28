@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Public Sans', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    padding-top: 50px;
+}
+
+.container{
+    padding-left: 150px;
+    height: 100%;
+}
+
+
+/************************************************Header Section************************************************/
+
+header{
+}
+
+header > .container{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.logo{
+    position: absolute;
+    height: 80px;
+    line-height: 80px;
+    padding-left: 150px;
+    text-align: center;
+}
+
+nav{
+    position: absolute;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    width: 400px;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* nav > ul{
+    list-style: none;
+} */
+
+nav > ul > li{
+    display: inline-block;
+    padding: 0 15px;
+    margin: 0;
+}
+
+nav > ul > li:hover{
+    /* border-radius: 5px;
+    border-bottom-style: solid  linear-gradient(45deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%)); */
+    /* border: 5px solid transparent;
+    border-image: linear-gradient(45deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%)); */
+}
+
+nav li > a{
+    color: hsl(233, 8%, 62%);
+}
+
+.invite-link{
+    position: absolute;
+    
+    right: 150px;
+}
+
+.invite-button{
+    color: hsl(0, 0%, 100%);
+    line-height: 80px;
+    text-align: center;
+    padding: 15px 25px;
+    background: linear-gradient(45deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));    
+    border-radius: 25px 25px;
+}
+
+/************************************************Showcase Section************************************************/
+#showcase{
+    background-color: hsl(221, 35%, 85%);
+    position: relative;
+    height: 450px;
+    z-index: -1;
+}
+
+/* #showcase > .container{
+    display: inline-block;
+} */
+
+#showcase .message{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 25%;
+    transform: translateY(-50%);
+    color: hsl(233, 8%, 62%);
+}
+
+.message h1{
+    color: hsl(233, 8%, 30%);
+}
+.message p{
+    color: hsl(233, 8%, 62%);
+    margin: 20px 0;
+}
+
+#showcase .images{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 65%;
+    height: 400px;
+    z-index: -1;
+}
+
+.images > .image-back{
+    /* display: inline-block; */
+    height: 800px;
+    width: 90%;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url('images/bg-intro-desktop.svg') ;
+    /* z-index: 1; */
+}
+
+.images > .image-front{
+    /* display: inline-block; */
+    position: absolute;
+    height: 800px;
+    bottom: -200px;
+    right: 0;
+    width: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url('images/image-mockups.png') ;
+    /* z-index: 2; */
+}
+
+
+
+/************************************************Feature Section************************************************/
+#feature{
+    background-color: rgb(244, 245, 247);
+}
+
+
+footer{
+    background-color: hsl(233, 26%, 24%);
+    color: hsl(0, 0%, 100%);
+    height: 200px;
+}
