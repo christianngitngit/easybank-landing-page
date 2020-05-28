@@ -9,8 +9,25 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
-h1 {
+p {
+  color: hsl(233, 8%, 62%);
+}
+
+h1{
   font-size: 2.5rem;
+}
+
+h2{
+  font-size: 2.2rem;
+}
+
+h4{
+  font-size: 1.5rem;
+}
+
+h1, h2, h4 {
+  color: hsl(233, 8%, 30%);
+  padding-bottom: 20px;
   font-weight: 300;
 }
 
@@ -23,8 +40,12 @@ a {
 }
 
 section {
-  padding-top: 50px;
-  height: 80vh;
+  /* padding-top: 50px;
+  height: 80vh; */
+  padding-top: 100px;
+  min-height: 600px;
+  max-height: 800px;
+  max-width: 1400px;
 }
 
 .container {
@@ -37,7 +58,6 @@ section {
 header {
     background-color: hsl(0, 0%, 100%);
     height: 20vh;
-    
 }
 
 header > .container {
@@ -108,8 +128,10 @@ nav li > a {
 #showcase {
   background-color: hsl(221, 35%, 85%);
   position: relative;
-  height: 600px;
+  /* height: 600px; */
   z-index: -1;
+  /* padding-top: 50px; */
+  height: 80vh;
 }
 
 /* #showcase > .container{
@@ -122,14 +144,12 @@ nav li > a {
   top: 50%;
   width: 25%;
   transform: translateY(-50%);
+  padding-top: 100px;
   color: hsl(233, 8%, 62%);
 }
 
-.message h1 {
-  color: hsl(233, 8%, 30%);
-}
 .message p {
-  color: hsl(233, 8%, 62%);
+  /* color: hsl(233, 8%, 62%); */
   margin: 20px 0;
 }
 
@@ -139,6 +159,7 @@ nav li > a {
   top: 0;
   width: 65%;
   height: 400px;
+  padding-top: 100px;
   /* z-index: -1; */
 }
 
@@ -152,7 +173,6 @@ nav li > a {
   background-size: cover;
   background-repeat: no-repeat;
   background: url("images/bg-intro-desktop.svg");
-  /* overflow: hidden; */
   z-index: -1;
 }
 
@@ -165,18 +185,67 @@ nav li > a {
   background-size: cover;
   background-repeat: no-repeat;
   background: url("images/image-mockups.png");
-
-  /* overflow: hidden; */
-  /* z-index: 2; */
 }
+
+
 
 /************************************************Feature Section************************************************/
 #feature {
   background-color: rgb(244, 245, 247);
   position: relative;
   z-index: -2;
+  padding: 150px 0 50px 0;
+  height: 700px;
 }
 
+#feature .container > p{
+  width: 50%;
+}
+
+.feature-cards{
+  display: inline-block;
+  padding-top: 100px;
+  padding-right: 100px;
+  /* text-align: start;   */
+}
+
+.feature-card{
+  /* padding: 50px 0; */
+  width: 25%;
+  float: left;
+}
+
+.feature-card p{
+  padding-right: 40px;
+  font-size: 0.95rem;
+}
+
+
+.feature-card-icon{
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  padding: 40px 0;
+}
+
+.icon-banking{
+  background: url('images/icon-online.svg') no-repeat;
+}
+
+.icon-budgeting{
+  background: url('images/icon-budgeting.svg') no-repeat;
+}
+
+.icon-onboarding{
+  background: url('images/icon-onboarding.svg') no-repeat;
+}
+
+.icon-api{
+  background: url('images/icon-api.svg') no-repeat;
+}
+/************************************************Footer Section************************************************/
 footer {
   background-color: hsl(233, 26%, 24%);
   color: hsl(0, 0%, 100%);
