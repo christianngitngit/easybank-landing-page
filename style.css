@@ -144,20 +144,19 @@ nav li > a {
 
 .images > .image-back {
   /* display: inline-block; */
-  height: 800px;
-  width: 90%;
+  height: 850px;
+  width: 100%;
   position: absolute;
-  bottom: 50px;
-  right: 0;
+  top: -250px;
+  right: 0px;
   background-size: cover;
   background-repeat: no-repeat;
   background: url("images/bg-intro-desktop.svg");
-  overflow: hidden;
-  /* z-index: 1; */
+  /* overflow: hidden; */
+  z-index: -1;
 }
 
 .images > .image-front {
-  /* display: inline-block; */
   position: absolute;
   height: 900px;
   top: -120px;
@@ -167,7 +166,7 @@ nav li > a {
   background-repeat: no-repeat;
   background: url("images/image-mockups.png");
 
-  overflow: hidden;
+  /* overflow: hidden; */
   /* z-index: 2; */
 }
 
