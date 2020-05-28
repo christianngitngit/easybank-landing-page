@@ -37,6 +37,7 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 section {
@@ -126,7 +127,7 @@ nav li > a {
 
 /************************************************Showcase Section************************************************/
 #showcase {
-  background-color: hsl(221, 35%, 85%);
+  background-color: hsl(225, 20%, 96.1%);
   position: relative;
   /* height: 600px; */
   z-index: -1;
@@ -191,7 +192,7 @@ nav li > a {
 
 /************************************************Feature Section************************************************/
 #feature {
-  background-color: rgb(244, 245, 247);
+  background-color: hsl(221, 35%, 85%);
   position: relative;
   z-index: -2;
   padding: 150px 0 50px 0;
@@ -249,8 +250,57 @@ nav li > a {
 
 /************************************************Newsletter Section************************************************/
 
+#newsletter{
+  padding-bottom: 20px;
+  height: 700px;
+  background-color: hsl(225, 20%, 96.1%);
+}
+.articles{
+  display: inline-block;
+}
+.article-card{
+  width: 20%;
+  height: 510px;
+  margin: 0 10px;
+  float: left;
+  background-color: hsl(0, 0%, 100%);
+}
 
+.article-card-image{
+  height: 200px;
+  background-size: cover;
+  margin-bottom: 30px;
+  /* background-position: center; */
+}
 
+.article-card-image-1{
+  background: url('images/image-currency.jpg') no-repeat;
+}
+
+.article-card-image-2{
+  background: url('images/image-restaurant.jpg') no-repeat;
+}
+
+.article-card-image-3{
+  background: url('images/image-plane.jpg') no-repeat;
+}
+
+.article-card-image-4{
+  background: url('images/image-confetti.jpg') no-repeat;
+}
+
+.article-card p, .article-card h4{
+  padding: 10px 15px;
+}
+
+.article-card h4:hover{
+  color: hsl(192, 70%, 51%);
+}
+.article-card p.article-author{
+  
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+}
 
 /************************************************Footer Section************************************************/
 footer {
