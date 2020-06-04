@@ -35,14 +35,17 @@ ul {
   list-style: none;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
+
+a:hover{
   cursor: pointer;
 }
 
 section {
-  /* padding-top: 50px;
-  height: 80vh; */
   padding-top: 100px;
   min-height: 600px;
   max-height: 800px;
@@ -58,7 +61,8 @@ section {
 
 header {
     background-color: hsl(0, 0%, 100%);
-    height: 20vh;
+    /* height: 20vh; */
+    min-height: 120px;
 }
 
 header > .container {
@@ -70,11 +74,14 @@ header > .container {
 }
 
 .logo {
-  position: absolute;
   height: 80px;
   line-height: 80px;
-  padding-left: 150px;
   text-align: center;
+}
+
+header .logo {
+  position: absolute;
+  padding-left: 150px;
 }
 
 nav {
@@ -103,9 +110,10 @@ nav > ul > li:hover {
     border-bottom-style: solid  linear-gradient(45deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%)); */
   /* border: 5px solid transparent;
     border-image: linear-gradient(45deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%)); */
+    color: hsl(233, 26%, 24%);
 }
 
-nav li > a {
+nav a , nav a:visited{
   color: hsl(233, 8%, 62%);
 }
 
@@ -161,6 +169,8 @@ nav li > a {
   width: 65%;
   height: 400px;
   padding-top: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* z-index: -1; */
 }
 
@@ -171,9 +181,9 @@ nav li > a {
   position: absolute;
   top: -250px;
   right: 0px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background: url("images/bg-intro-desktop.svg");
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  background-image: url("images/bg-intro-desktop.svg");
   z-index: -1;
 }
 
@@ -183,9 +193,9 @@ nav li > a {
   top: -120px;
   right: 0;
   width: 650px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background: url("images/image-mockups.png");
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  background-image: url("images/image-mockups.png");
 }
 
 
@@ -224,7 +234,7 @@ nav li > a {
 
 .feature-card-icon{
   background-size: cover;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-position: center;
   width: 100px;
   height: 100px;
@@ -232,19 +242,19 @@ nav li > a {
 }
 
 .icon-banking{
-  background: url('images/icon-online.svg') no-repeat;
+  background-image: url('images/icon-online.svg');
 }
 
 .icon-budgeting{
-  background: url('images/icon-budgeting.svg') no-repeat;
+  background-image: url('images/icon-budgeting.svg');
 }
 
 .icon-onboarding{
-  background: url('images/icon-onboarding.svg') no-repeat;
+  background-image: url('images/icon-onboarding.svg');
 }
 
 .icon-api{
-  background: url('images/icon-api.svg') no-repeat;
+  background-image: url('images/icon-api.svg');
 }
 
 
@@ -306,5 +316,77 @@ nav li > a {
 footer {
   background-color: hsl(233, 26%, 24%);
   color: hsl(0, 0%, 100%);
+  height: 250px;
+  width: 100%;
+  display: inline-block;
+  padding-top: 40px;
+}
+
+.left-footer{
+  float: left;
+  width: 30%;
+}
+
+footer .logo {
+  
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
+.left-footer .icon{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.left-footer .icon a:hover{
+  color: hsl(136, 65%, 51%);
+}
+.left-footer .icon-facebook{
+  background-image: url("images/icon-facebook.svg");
+}
+.left-footer .icon-youtube{
+  background-image: url("images/icon-youtube.svg");
+}
+.left-footer .icon-twitter{
+  background-image: url("images/icon-twitter.svg");
+}
+.left-footer .icon-pinterest{
+  background-image: url("images/icon-pinterest.svg");
+}
+.left-footer .icon-instagram{
+  background-image: url("images/icon-instagram.svg");
+}
+
+.middle-footer{
+  float: left;
+  width: 30%;
+}
+
+.middle-footer ul{
+  width: 300px;
   height: 200px;
+  columns: 2;
+}
+
+.middle-footer li{
+  display: inline-block;
+  padding: 20px 10px;
+  width: 150px;
+}
+
+
+
+footer img:hover, footer a:hover{
+  color: hsl(136, 65%, 51%);
+}
+
+.right-footer{
+  float: right;
+  width: 40%;
 }
