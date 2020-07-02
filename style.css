@@ -50,6 +50,7 @@ section {
   min-height: 600px;
   max-height: 800px;
   max-width: 1400px;
+  /* text-align: center; */
 }
 
 .container {
@@ -57,18 +58,44 @@ section {
   height: 100%;
 }
 
+header {
+  background-color: hsl(0, 0%, 100%);
+  /* height: 20vh; */
+  min-height: 120px;
+  z-index: 2;
+  position: relative;
+}
+
+#showcase {
+  background-color: hsl(225, 20%, 96.1%);
+  position: relative;
+  /* padding-top: 50px; */
+  height: 80vh;
+  z-index: 1;
+  /* overflow-y: hidden;   */
+}
+
+#feature {
+  background-color: hsl(221, 35%, 85%);
+  position: relative;
+  /* z-index: -2; */
+  padding: 150px 0 50px 0;
+  height: 700px;
+}
+
+#newsletter{
+  padding-bottom: 20px;
+  height: 700px;
+  background-color: hsl(225, 20%, 96.1%);
+}
+
 /************************************************Header Section************************************************/
 
-header {
-    background-color: hsl(0, 0%, 100%);
-    /* height: 20vh; */
-    min-height: 120px;
-}
+
 
 header > .container {
   position: relative;
   width: 100%;
-  /* height: 100%; */
   display: inline-block;
   padding: 20px 0;
 }
@@ -131,21 +158,14 @@ nav a , nav a:visited{
   border-radius: 25px 25px;
 }
 
+.invite-button:hover{
+  opacity: 0.7;
+}
 
 
 /************************************************Showcase Section************************************************/
-#showcase {
-  background-color: hsl(225, 20%, 96.1%);
-  position: relative;
-  /* height: 600px; */
-  z-index: -1;
-  /* padding-top: 50px; */
-  height: 80vh;
-}
 
-/* #showcase > .container{
-    display: inline-block;
-} */
+
 
 #showcase .message {
   position: absolute;
@@ -166,23 +186,19 @@ nav a , nav a:visited{
   position: absolute;
   right: 0;
   top: 0;
-  width: 65%;
-  height: 400px;
+  width: 35rem;
+  height: 25rem;
   padding-top: 100px;
   background-size: cover;
   background-repeat: no-repeat;
-  /* z-index: -1; */
 }
 
 .images > .image-back {
-  /* display: inline-block; */
   height: 850px;
   width: 100%;
   position: absolute;
   top: -250px;
   right: 0px;
-  /* background-size: cover;
-  background-repeat: no-repeat; */
   background-image: url("images/bg-intro-desktop.svg");
   z-index: -1;
 }
@@ -193,21 +209,13 @@ nav a , nav a:visited{
   top: -120px;
   right: 0;
   width: 650px;
-  /* background-size: cover;
-  background-repeat: no-repeat; */
   background-image: url("images/image-mockups.png");
 }
 
 
 
 /************************************************Feature Section************************************************/
-#feature {
-  background-color: hsl(221, 35%, 85%);
-  position: relative;
-  z-index: -2;
-  padding: 150px 0 50px 0;
-  height: 700px;
-}
+
 
 #feature .container > p{
   width: 50%;
@@ -260,11 +268,7 @@ nav a , nav a:visited{
 
 /************************************************Newsletter Section************************************************/
 
-#newsletter{
-  padding-bottom: 20px;
-  height: 700px;
-  background-color: hsl(225, 20%, 96.1%);
-}
+
 .articles{
   display: inline-block;
 }
@@ -389,4 +393,21 @@ footer img:hover, footer a:hover{
 .right-footer{
   float: right;
   width: 40%;
+}
+
+
+/* For tablets: */
+@media screen and (max-width: 800px){
+  section{
+    width: 100%;
+  }
+
+}
+
+/* For phones: */
+@media screen and (max-width: 375px){
+  section{
+    width: 100%;
+  }
+
 }
